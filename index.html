@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet" href="./global.css" />
+  	<link rel="stylesheet"  href="./index.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Sansita:wght@800&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+	<div class="ilead-page">
+		<img class="gemini-generated-image-gma7ugg-icon" alt="" src="./public/Gemini_Generated_Image_gma7uggma7uggma7-Picsart-AiImageEnhancer 2.png">
+		<img class="students-conference-1-2" alt="Students Conference" src="./public/Students Conference (1) 2.png">
+		<div class="india-campus-crusade">INDIA CAMPUS CRUSADE FOR CHRIST<br>PRESENTS</div>
+		<img class="rectangle-icon" alt="" src="./public/Rectangle.png">
+		<img class="i-lead-20260921-165823-0000-1" alt="iLead Students Conference" src="./public/i-LEAD _20260921_165823_0000 1.png">
+		<a class="fluid-button fluid-button-one" href="https://www.instagram.com/ilead_26" target="_blank" rel="noopener noreferrer">
+			<img class="social-icon" src="./public/instagram.svg" alt="">
+			<span>Instagram</span>
+		</a>
+		<button class="fluid-button fluid-button-two" type="button">Highlights</button>
+		<section class="highlight-panel" aria-label="Highlights" aria-hidden="true">
+			<button class="back-button" type="button" aria-label="Back to Instagram and Highlight buttons">
+				<span aria-hidden="true">&#8592;</span>
+			</button>
+			<div class="folder-grid">
+				<a class="folder-item folder-item-one" href="https://drive.google.com/drive/folders/15Qf1NkEgpVQuNBhDTJxoa2Gg4MaXHAaq?usp=sharing" target="_blank" rel="noopener noreferrer">
+					<img src="./public/folder.svg" alt="">
+					<span>Day 1</span>
+				</a>
+				<a class="folder-item folder-item-two" href="https://drive.google.com/drive/folders/10nRJAr2M5fc_DZrM8e3mM4G1CbCJPFoW?usp=sharing" target="_blank" rel="noopener noreferrer">
+					<img src="./public/folder.svg" alt="">
+					<span>Day 2</span>
+				</a>
+				<a class="folder-item folder-item-three" href="https://drive.google.com/drive/folders/1Q2KFGmm6VMO-NIiZYHmYBcqFafPknCii?usp=sharing" target="_blank" rel="noopener noreferrer">
+					<img src="./public/folder.svg" alt="">
+					<span>Day 3</span>
+				</a>
+			</div>
+		</section>
+	</div>
+	<script>
+		const page = document.querySelector('.ilead-page');
+		const highlightButton = document.querySelector('.fluid-button-two');
+		const backButton = document.querySelector('.back-button');
+		const highlightPanel = document.querySelector('.highlight-panel');
+
+		function showHighlights() {
+			page.classList.add('highlights-open');
+			highlightPanel.setAttribute('aria-hidden', 'false');
+		}
+
+		function hideHighlights() {
+			page.classList.remove('highlights-open');
+			highlightPanel.setAttribute('aria-hidden', 'true');
+			highlightButton.focus();
+		}
+
+		highlightButton.addEventListener('click', showHighlights);
+		backButton.addEventListener('click', hideHighlights);
+	</script>
+  	
+  	
+  	
+  	
+</body>
+</html>
